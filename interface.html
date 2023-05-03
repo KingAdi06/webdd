@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOD LOGIN</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+			font-size: 20px;
+		}
+		label {
+			margin-bottom: 10px;
+		}
+		input[type="text"], select {
+			padding: 10px;
+			margin-bottom: 20px;
+			width: 300px;
+			font-size: 20px;
+			border-radius: 5px;
+			border: 1px solid gray;
+		}
+		select {
+			width: 320px;
+		}
+		button {
+			padding: 10px 30px;
+			font-size: 20px;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label>Select Year:</label>
+		<select name="year">
+			<option value="1">1st Year</option>
+			<option value="2">2nd Year</option>
+			<option value="3">3rd Year</option>
+			<option value="4">4th Year</option>
+		</select>
+
+		<label>Enter Subject:</label>
+		<input type="text" name="subject" placeholder="Enter Subject" required>
+
+		<label>Select SEM:</label>
+		<select name="sem">
+			<option value="1">1 sem</option>
+			<option value="2">2 sem </option>
+			<option value="3">3 sem</option>
+            <option value="4">4 sem</option>
+			<option value="5">5 sem</option>
+            <option value="6">6 sem</option>
+            <option value="7">7 sem</option>
+            <option value="8">8 sem</option>
+		</select>
+
+		<label>Select Branch:</label>
+		<select name="branch">
+			<option value="Cse">CSE</option>
+			<option value="IT">IT</option>
+			<option value="Civil">Civil</option>
+            <option value="Mech">EC</option>
+			<option value="Mech">Mechanical</option>
+		</select>
+
+		<button  type="button"  onClick="parent.location='information.html'" id ="info ">Next</button>
+	</form>
+</body>
+</html>

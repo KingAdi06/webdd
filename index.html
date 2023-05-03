@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account Creation and Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+
+    <div class="login-container">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" >
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" >
+        <label for="account-type">Account Type:</label>
+        <select id="account-type" name="account-type">
+          <option value="admin">Admin</option>
+          <option value="user">User</option>
+        </select>
+       <button type="button" id="login-btn">Login</button>
+        <br>
+        <button  type="button"  onClick="parent.location='create.html'" id ="create ">Create Account</button>
+        
+        
+
+
+        
+
+
+      </form>
+    </div>
+    <script>
+      
+      function myFunction() {
+        window.location.href="create.html";  
+      }
+      
+        const loginBtn = document.getElementById("login-btn");
+        loginBtn.addEventListener("click", function() {
+          // get the username and password values
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+          
+          // perform login validation
+          if (username === "admin" && password === "admin123") {
+            alert("Login successful!");
+            // redirect to the dashboard page
+            window.location.href = "interface.html";
+          } else {
+            alert("Invalid username or password. Please try again.");
+          }
+        });
+      </script>
+  </body>
+</html>
